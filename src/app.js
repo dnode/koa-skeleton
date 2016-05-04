@@ -1,11 +1,11 @@
-import dheaders from 'dheaders';
-import dhttpAuth from 'dhttp-auth';
 import app from 'dkoa';
+import dkoaHeaders from 'dkoa-headers';
+import dkoaHttpAuth from 'dkoa-headers';
 
 import Router from './router.js';
 
-app.use(dheaders);
-app.use(dhttpAuth);
+app.use(dkoaHeaders);
+app.use(dkoaHttpAuth);
 const router = Router();
 app
   .use(router.routes())

@@ -16,9 +16,9 @@
     "babel-cli": "^6.7.5",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.7.7",
     "babel-preset-koa": "^1.0.0",
-    "dheaders": "^1.1.0@next",
-    "dhttp-auth": "^1.4.0@next",
     "dkoa": "^1.0.0",
+    "dkoa-headers": "^1.0.0",
+    "dkoa-http-auth": "^1.0.0",
     "dthrong": "^2.6.0",
     "koa-router": "^7.0.1"
   },
