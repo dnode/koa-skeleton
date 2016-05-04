@@ -1,12 +1,10 @@
-import dheaders from 'dheaders';
-import dhttpAuth from 'dhttp-auth';
-import app from 'dkoa';
+import Koa from 'koa';
 
 import Router from './router.js';
 
-app.use(dheaders);
-app.use(dhttpAuth);
+const app = new Koa();
 const router = Router();
 app
   .use(router.routes())
   .use(router.allowedMethods());
+app.listen(process.env.PORT);
